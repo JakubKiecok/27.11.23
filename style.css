@@ -1,0 +1,266 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+header{
+    margin-top: -10px;
+    background-image: url(cover3.jpg);
+    background-size: cover;
+    height: 800px;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 100px;
+    color: white;
+}
+.czarny{
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    border-radius: 25px;
+}
+.guziczki a{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+    text-align: center;
+    border: 2px black solid;
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
+}
+.guziczki{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    height: 300px;
+    width: 200px;
+    border: 2px black solid;
+}
+.box .gora{
+    height: 50%;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+.box .gora img{
+    width: 100%;
+    height: 100%;
+}
+.box .dol{
+    height: 49%;
+    width: 100%;
+    padding-bottom: 1px;
+}
+.box .dol2{
+    height: 49%;
+    width: 100%;
+    background-color: red;
+    padding-bottom: 1px;
+}
+.box .dol p button{
+    float: right;
+}
+.box .dol2 p button{
+    float: right;
+    background-color: blue;
+}
+.box:first-child .dol p button{
+    background-color: red;
+}
+.box:last-child .dol p button{
+    background-color: yellow;
+}
+.box:first-child .dol{
+    background-color: yellow;
+}
+.box:last-child .dol{
+    background-color: blue;
+} 
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    background-color: burlywood;
+    border-top: brown 5px solid;
+    margin-top: 500px;
+}
+.header{
+    background-image: url(cover3.jpg);
+    background-size: cover;
+    height: 500px;
+    color: white;
+}
+.header a{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border: 2px black solid;
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
+}
+.header .gora b{
+    font-size: 30px;
+}
+.header .dol{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.header .dol .imieinazwisko{
+    display: flex;
+    justify-content: space-between;
+}
+.header .dol .imieinazwisko input{
+    height: 50px;
+    width: 30%;
+    font-size: 20px;
+    margin-right: -7px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+}
+.header .dol .email input{
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+}
+.header .dol .tekst input{
+    height: 200px;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+}
+.mapa{
+    margin: 0;
+    padding: 0;
+}
+.center{
+    text-align: center;
+    margin-top: -20px;
+}
+.footer{
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    background-color: burlywood;
+    border-top: brown 5px solid;
+}
+@media(max-width: 425px) {
+    html{
+        max-width: 425px;
+    }
+    header{
+        background-position: 37%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 0px;
+        height: 50%;
+        width: 97%;
+    }
+    .czarny{
+        width: 90%;
+    }
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 25%;
+    }
+    .box{
+        margin-bottom: 25px;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        height: 500px;
+    }
+    footer ul{
+        width: 30%;
+        padding: 10px;
+    }
+    footer ul:last-child{
+        margin-left: -20%;
+        padding-right: 100px;
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .header{
+        padding-top: 10px;
+        background-position: 37%;
+    }
+    .header .dol{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .header .gora{
+        margin-bottom: 10px;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-left: 0;
+        padding-right: 0;
+        height: 500px;
+    }
+    .footer ul{
+        width: 30%;
+        padding: 10px;
+    }
+    .header a{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        border: 2px black solid;
+        background-color: lightgray;
+        text-decoration: none;
+        color: black;
+    }
+    .footer ul:last-child{
+        margin-left: -20%;
+        padding-right: 100px;
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+@media(min-width: 700px) and (max-width: 1024px){
+    header{
+        background-position: 37%;
+        width: 39%;
+    }
+    footer{
+        width: 99%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+    }
+}
